@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script type="text/javascript" src="../cordova-2.1.0.js"></script>
+  <script src="../javascript/functions.js" type="text/javascript"></script>
+  <meta charset="UTF-8" />
+  <meta name="description" content="This is an apllication for Rooting Guides" />
+  <meta name="keywords" content="Root,Rooting guides,Guides" />
+  <meta name="author" content="Remzi Cavdar" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport" />
+  <link href="../css/style.css" rel="stylesheet" media="screen" type="text/css" />
+  <title>Rooting Guides</title> 
+ </head> 
+ <body> 
+  <div id="topbar"> 
+   <div id="leftnav"> 
+	<a href="../index.html"><img alt="home" src="../images/home.png"></a><a href="../index.html">Home</a></div> 
+  </div> 
+
+  <div id="content"> 
+   <div class="graytitle"> 
+    SuperOneClick
+   </div> 
+   <ul class="pageitem"> 
+    <li class="textbox">
+	 <img src="../images/SuperOneClick.png" alt="SuperOneClick preview">
+      <br><br>The latest version of <b>SuperOneClick</b> is 2.3.3<br> 
+	  The official website of SuperOneClick is: <a href="http://shortfuse.org">shortfuse.org</a>
+	  <br>
+	  <br>
+	  <a href="http://www.filefactory.com/file/c443c36/n/SuperOneClick_v2_3_3_zip">Download SuperOneClick v2.3.3</a>
+	</li> 
+   </ul>
+   
+   
+<!--   
+   
+   <table>
+    <tbody>
+	 <tr>
+	  <th>
+	   	<script type="text/javascript">
+google_ad_client = "ca-pub-7306230381069052";
+/* Rooting Guides 3 */
+google_ad_slot = "1231326710";
+google_ad_width = 320;
+google_ad_height = 50;
+
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	  </th>
+	 </tr>
+	</tbody>
+   </table>
+
+ -->  
+   
+	<br>
+	<br>
+	<!-- Dit is de apparatenlijst -->
+	
+	<ul class="pageitem"> 
+	 <li class="textbox">
+	  <b>Compatibility list</b><br><br>
+      Please note that if you device is not listed here,<br>
+      it doesn't automatically make it incompatible.<br>
+      The list is definitely incomplete.<br><br>
+     </li>
+	</ul>
+	  <ul>
+	  <li>
+	  Acer Liquid Metal<br>
+	  </li> 
+	  <li>
+	  Dell Streak<br>
+	  </li>
+	  <li>
+	  HTC Magic (Sapphire) 32B<br>
+	  </li> 
+	  <li>
+	  HTC Bee<br>
+	  </li> 
+	  <li>
+	  LG Ally<br>
+	  </li> 
+	  <li>
+	  Motorola Atrix4G<br>
+	  </li> 
+	  <li>
+	  Motorola Charm<br>
+	  </li> 
+	  <li>
+	  Motorola Cliq<br>
+	  </li> 
+	  <li>
+	  Motorola Droid<br>
+	  </li> 
+	  <li>
+	  Motorola Flipside<br>
+	  </li> 
+	  <li>
+	  Motorola Flipout<br>
+	  </li> 
+	  <li>
+	  Motorola Milestone<br>
+	  </li> 
+	  <li>
+	  Nexus One<br>
+	  </li> 
+	  <li>
+	  Samsung Captivate<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy 551 (GT-I5510)<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy Portal/Spica I5700<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy S 4G<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy S I9000<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy S SCH-I500<br>
+	  </li> 
+	  <li>
+	  Samsung Galaxy Tab<br>
+	  </li> 
+	  <li>
+	  Samsung Transform M920<br>
+	  </li> 
+	  <li>
+	  Samsung Vibrant<br>
+	  </li> 
+	  <li>
+	  Sony Ericsson Xperia E51i X8<br>
+	  </li> 
+	  <li>
+	  Sony Ericsson Xperia X10<br>
+	  </li> 
+	  <li>
+	  Sprint Hero<br>
+	  </li> 
+	  <li>
+	  Telus Fascinate<br>
+	  </li> 
+	  <li>
+	  Toshiba Folio 100<br>
+	  </li>
+     </ul> 
+    <br><br>
+	
+	
+	<ul class="pageitem">
+	 <li class="textbox">
+	  <b>Incompatibility list</b><br>
+
+      With the absolutely beautiful ADB exploit I use,<br>
+	  titled rageagainstthecage (ratc),<br>
+	  absolute ALL devices can be rooted.<br>
+	  This is because it exploit is ADB which all devices use.<br>
+	  There is an issue though. Some devices have a NAND lock <br>
+	  which does not allow you to write to the /system mount.<br><br>
+	  Because of this, you can't copy su, sqlite or busybox to /system/bin.<br>
+	  This creates some issues but there is a work around.<br>
+	  For things that don't need access to /system (like enabling non-market apps)<br>
+	  I can use the ratc exploit to make those changes.<br>
+	  If your device cannot use su in /system/bin then you can<br>
+	  simple select a checkbox (as of v1.5) that says to use ratc.<br><br><br>
+
+      There are 3 levels of "root" we can define:<br><br>
+      <ul>
+	   <li>
+	    Level 1: Shell Root (with ratc rooting the adb shell but no /system write access)<br>
+       </li>
+	   <li>
+		Level 2: Temporary Root (/system/bin/su installed but lost on reboot)<br>
+       </li>
+	   <li>
+		Level 3: Full Root (/system/bin/su installed and sticks)<br>
+	   </li>
+	  </ul>
+	 </li>
+	</ul>
+<!--	
+	<table>
+	 <tbody>
+	  <tr>
+	   <th>
+	<script type="text/javascript">
+google_ad_client = "ca-pub-7306230381069052";
+/* Rooting Guides 7 */
+google_ad_slot = "4286918805";
+google_ad_width = 234;
+google_ad_height = 60;
+
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+	   </th>
+	  </tr>
+	 </tbody>
+	</table>
+	<br>
+-->
+<br>	
+   <ul class="pageitem">
+	<li class="textbox">
+	Some devices have a NAND lock.<br> 
+	SuperOneClick will only give a Shell root until you remove this lock.<br> 
+     The following phones can use <b>unrevoKed</b> to remove this lock:
+	 <br><br>
+	 <ul>
+	  <li>
+	  Sprint EVO 4G (HTC Supersonic)
+	  </li>
+	  <li>
+	  Droid Incredible (HTC Incredible)
+	  </li>
+	  <li>
+	  HTC Desire GSM
+	  </li>
+	  <li>
+	  HTC Desire CDMA (HTC BravoC)
+	  </li>
+	  <li>
+	  HTC Aria
+	  </li>
+	  <li>
+	  Droid Eris (HTC DesireC)
+	  </li>
+	  <li>
+	  HTC Wildfire (HTC Buzz)<br><br>
+	  </li>
+	  </ul>
+	  <b>Tap below to go to unrevoked website</b>
+	  
+	  </li>
+	  
+	  
+	  
+	   <li class="menu">
+	    <a class="noeffect" href="http://unrevoked.com">
+		 <img alt="fullscreen" src="../thumbs/unrevoked.png">
+		 <span class="name">Website</span>
+		 <span class="arrow">
+		 </span>
+	    </a>
+	   </li>
+ 	</ul>
+	<br><br><br>
+	
+	<!-- XDA Developers logo-->
+	<table width="90%">
+	 <tbody>
+	  <tr>
+	   <td style="float:right">
+	    <a href="http://forum.xda-developers.com/showthread.php?t=803682" title="XDA Developers">
+		 <img src="../thumbs/info.png" alt="Info button">
+		</a>
+	   </td>
+	   <td style="float:right">
+	    Source:
+	   </td>
+	  </tr>
+	 </tbody>
+	</table>
+  
+  </div> 
+ </body>	
+</html>

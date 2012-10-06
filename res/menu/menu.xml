@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item android:id="@+id/index"
+      android:title="Home"
+      android:icon="@drawable/index"/>
+
+<item android:id="@+id/refresh"
+      android:title="Refresh"
+      android:icon="@drawable/refresh"/>
+
+<item android:id="@+id/about"
+      android:title="About"
+      android:icon="@drawable/about"/>
+
+<item android:id="@+id/close"
+      android:title="Close"
+      android:icon="@drawable/close"/>
+
+</menu>
