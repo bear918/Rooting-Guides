@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="root.world.guide.free.remzi.cavdar"
+    package="root.world.guide.free.remzi.cavdar.open.remzicavdar"
     android:versionCode="16"
     android:versionName="1.1.5" android:installLocation="preferExternal">
 
